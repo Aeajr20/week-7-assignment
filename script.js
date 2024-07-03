@@ -21,7 +21,11 @@ console.log(averageAge); // Log the average age
 
 // Define an array of names
 const names =["Sam", "Tommy", "Tim","Sally","Buck","Bob"];
- 
+
+console.log("How do you access the first element of any array?" +" " + "Answer:  to select the first element of an array, you can use index 0 of the array for example  lets say the array is const numbers = [1,2,3,,4] you would select console.log(numbers[0])")
+
+console.log("How do you access the last element of any array?" +" " + "Answer:  to select the last element of an array,  you can create lastNumber = numbers[numbers.length - 1] const numbers = [1,2,3,,4] you would select console.log(lastNumber)")
+
 // Calculate the average number of letters per name
 let lettersSum = 0;
 for (let i =0; i < names.length; i++){
@@ -98,13 +102,31 @@ function willBuyDrink(isHotOutside, moneyInPocket) {
 return isHotOutside && moneyInPocket > 10.50;
 }
 
-// Example of a custom function
-// This function calculates the factorial of a given number
-function factorial(n) {
+
+// // Example my custom function
+function factorial(n) {     
+
   if (n <= 1) return 1;
   return n * factorial(n - 1);
 }
 console.log(factorial(5)); // Output: 120
+
+
+// // This function calculates the factorial of a given number
+
+// 5 * factorial(4) (because 5 is not less than or equal to 1)
+// 5 * (4 * factorial(3)) (unrolling the recursion)
+// 5 * (4 * (3 * factorial(2)))
+// 5 * (4 * (3 * (2 * factorial(1))))
+// 5 * (4 * (3 * (2 * 1))) (because the factorial of 1 is 1)
+// 5 * (4 * (3 * 2))
+// 5 * (4 * 6)
+// 5 * 24
+// 120
+
+
+
+
 
 /**
  * This function generates a random compliment.
