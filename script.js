@@ -1,91 +1,102 @@
+// Define an array of ages
 const ages = [3,9,23,64,2,8,28,93];
 
+// Calculate the difference between the last and first age in the array
 const diff = ages[ages.length - 1] - ages[0];
-console.log(diff);
+console.log(diff); // Log the difference
  
- ages.push(65);
- const newdiff = ages[ages.length - 1] - ages[0];
- console.log(newdiff);
+// Add a new age to the end of the array
+ages.push(65);
+// Calculate the new difference between the last and first age in the array
+const newdiff = ages[ages.length - 1] - ages[0];
+console.log(newdiff); // Log the new difference
 
- let ageSum = 0;
- for (let i = 0; i < ages.length; i++){ 
+// Calculate the average age
+let ageSum = 0;
+for (let i = 0; i < ages.length; i++){ 
   ageSum += ages[i];
- }
- const averageAge = ageSum / ages.length;
- console.log(averageAge);
+}
+const averageAge = ageSum / ages.length;
+console.log(averageAge); // Log the average age
 
- const names =["Sam", "Tommy", "Tim","Sally","Buck","Bob"];
+// Define an array of names
+const names =["Sam", "Tommy", "Tim","Sally","Buck","Bob"];
  
- 
- let lettersSum = 0;
- for (let i =0; i < names.length; i++){
+// Calculate the average number of letters per name
+let lettersSum = 0;
+for (let i =0; i < names.length; i++){
 lettersSum += names[i].length;
- }
+}
+const avgLetters = lettersSum / names.length;
+console.log(avgLetters); // Log the average number of letters per name
 
- const avgLetters = lettersSum / names.length;
- console.log(avgLetters);
-
- let addNames = "";
- for (let i = 0; i < names.length; i++){
+// Concatenate all the names into a single string
+let addNames = "";
+for (let i = 0; i < names.length; i++){
  addNames += names[i] + " ";
- }
- addNames = addNames.trim(); 
- console.log(addNames);
+}
+addNames = addNames.trim(); 
+console.log(addNames); // Log the concatenated names
 
- const lastElement = ages [ages.length -1];
+// Get the last and first elements of the ages array
+const lastElement = ages [ages.length -1];
+const firstElement = ages [0];
 
- const firstElement = ages [0];
-
- const nameLengths = [];
- for (let i = 0; i < names.length; i++) {
+// Calculate the length of each name and store the lengths in a new array
+const nameLengths = [];
+for (let i = 0; i < names.length; i++) {
   nameLengths.push(names[i].length);
- }
- console.log(nameLengths);
+}
+console.log(nameLengths); // Log the array of name lengths
 
- let nameLengthSum = 0;
- for (let i = 0; i < nameLengths.length; i++){
+// Calculate the sum of the name lengths
+let nameLengthSum = 0;
+for (let i = 0; i < nameLengths.length; i++){
   nameLengthSum += nameLengths[i];
- }
- console.log(nameLengthSum);
+}
+console.log(nameLengthSum); // Log the sum of the name lengths
 
- function addWord(word, n){
+// Define a function that repeats a word a given number of times
+function addWord(word, n){
   let result = "";
   for (let i = 0; i < n; i++) {
     result += word;
   }
   return result;
- }
+}
 
- function getfullName(firstName, lastName) {
+// Define a function that concatenates a first name and a last name
+function getfullName(firstName, lastName) {
  return `${firstName} ${lastName}`;
 }
 
- function isSumGreaterThan100(array) {
+// Define a function that checks if the sum of an array is greater than 100
+function isSumGreaterThan100(array) {
   let sum = 0;
   for (let i = 0; i < array.length; i++) {
     sum += array[i];
   }
   return sum > 100;
-  
- }
-  
+}
+
+// Define a function that calculates the average of an array
 function getAverage(array){
   let sum = 0;
   for ( let i = 0; i < array.length; i++) {
     sum += array[i];
   }
   return sum / array.length;
-  }
+}
 
- function isArrayGreater(array1, array2){
+// Define a function that checks if the average of one array is greater than the average of another array
+function isArrayGreater(array1, array2){
   return getAverage(array1) > getAverage(array2);
- }
- 
- function willBuyDrink(isHotOutside, moneyInPocket) {
+}
+
+// Define a function that checks if a person will buy a drink
+function willBuyDrink(isHotOutside, moneyInPocket) {
 return isHotOutside && moneyInPocket > 10.50;
-
- }
-
+}
 
 // Example of a custom function
 // This function calculates the factorial of a given number
