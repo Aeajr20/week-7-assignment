@@ -19,12 +19,14 @@ for (let i = 0; i < ages.length; i++){
 const averageAge = ageSum / ages.length;
 console.log(averageAge); // Log the average age
 
-// Define an array of names
-const names =["Sam", "Tommy", "Tim","Sally","Buck","Bob"];
 
 console.log("How do you access the first element of any array?" +" " + "Answer:  to select the first element of an array, you can use index 0 of the array for example  lets say the array is const numbers = [1,2,3,,4] you would select console.log(numbers[0])")
 
 console.log("How do you access the last element of any array?" +" " + "Answer:  to select the last element of an array,  you can create lastNumber = numbers[numbers.length - 1] const numbers = [1,2,3,,4] you would select console.log(lastNumber)")
+
+
+// Define an array of names
+const names =["Sam", "Tommy", "Tim","Sally","Buck","Bob"];
 
 // Calculate the average number of letters per name
 let lettersSum = 0;
